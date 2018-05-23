@@ -1,3 +1,5 @@
+package src;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -10,11 +12,11 @@ public class loginPage {
 		System.out.println("Cleared input fields");
 	}
 	
-	public static void performLogin(WebDriver driver,String url, String accId, String uname, String pwd) {		
-		driver.get(url);
-		
+	public static void performLogin(WebDriver driver,String url, String accId, String uname, String pwd) throws InterruptedException {		
+		driver.get(url);		
 		System.out.println("URL is loaded");
 		
+		Thread.sleep(5000);
 		clearfields(driver);
 		driver.findElement(By.id("account")).sendKeys(accId);
 		driver.findElement(By.id("username")).sendKeys(uname);
@@ -23,5 +25,4 @@ public class loginPage {
 		
 		System.out.println("Account details are submitted.");
 	}
-
 }
