@@ -65,7 +65,7 @@ public class awsReport {
 		System.out.println("");
 		System.out.println("Generating the list ...");
 		System.out.println("");
-		WebElement element = driver.findElement(By.xpath("//div[@class='GO-IDYFEHG']//tbody"));
+		WebElement element = driver.findElement(By.xpath("//div[@class='GEERFXXDNIG']//tbody"));
 		List<WebElement> rows = element.findElements(By.tagName("tr"));
 			
 		for (int i = 0; i < rows.size(); i++) {
