@@ -35,9 +35,9 @@ public class awsReport {
 	
 	public static void main(String[] args) throws InterruptedException {
 
-		final String accountId = "505698109262";
-		final String username = "feeroz.alam";
-		final String password = "Nikira@Test18";
+		final String accountId = "";
+		final String username = "";
+		final String password = ";
 		baseURL = "https://subexaws.signin.aws.amazon.com/console";
 
 		// Load the browser and URL
